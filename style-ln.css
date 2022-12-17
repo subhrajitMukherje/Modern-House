@@ -230,4 +230,7 @@ header .navbar a {
 .input-grp {
     top: 125px;
     }
+.navbar .home-nav{
+    display: block;
+}
 }
