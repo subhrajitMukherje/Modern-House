@@ -28,7 +28,7 @@ header {
     right: 0;
     z-index: 1000;
     background: #fff;
-    padding: 1.5rem 9%;
+    padding: 2rem 9%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     display: flex;
     align-items: center;
@@ -95,6 +95,7 @@ header .icons #menu-bars {
     position: relative;
     box-shadow: 0 0 30px 9px #fbbaae;
     border-radius: 30px;
+    background-color: #f9edeb;
 }
 
 .button-in {
@@ -124,7 +125,7 @@ header .icons #menu-bars {
 }
 
 .input-grp {
-    top: 180px;
+    top: 150px;
     width: 280px;
     position: absolute;
     transition: .5s;
@@ -230,7 +231,10 @@ header .navbar a {
 .input-grp {
     top: 125px;
     }
-.navbar .home-nav{
+header.home-nav{
     display: block;
+}
+header {
+    padding: 1rem 2%;
 }
 }
