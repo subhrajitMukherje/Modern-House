@@ -104,10 +104,14 @@ header .icons #menu-bars {
     position: relative;
     background: transparent;
     outline: none;
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #333;
     font-size: 1.5rem;
 }
 
+.button-in:focus{
+    color: #fff;
+}
 #btn {
     top: 0;
     left: 0;
