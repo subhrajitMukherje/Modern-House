@@ -177,3 +177,57 @@ header .icons #menu-bars {
 #signup {
     left: 450px;
 }
+
+@media screen and (max-width:600px) {
+    header .icons #menu-bars,
+header .icons a {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    border-radius: .5rem;
+    
+}
+header .navbar a {
+    color: #333;
+    font-size: 1.7rem;
+    padding: 0 2rem;
+} 
+
+.box-form {
+    width: 330px;
+    height: 410px;
+    margin: 36% auto;
+    padding: 2.5px;
+    box-shadow: 0 0 12px 4px #fbbaae;
+}
+
+.input-field {
+    width: 80%;
+    padding: 10px 0;
+    margin: 5px 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+}
+.submit-btn {
+    width: 60%;
+    padding: 10px 30px;
+    margin: auto 10%;    
+}
+.check-box {
+    margin: 20px 10px 20px 10px;
+}
+.check-item {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: unset;
+}
+.input-grp {
+    top: 125px;
+    }
+}
