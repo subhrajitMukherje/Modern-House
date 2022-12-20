@@ -8,57 +8,54 @@
     <title>Log-In & Sign-Up </title>
     <link rel="stylesheet" href="style-ln.css">
 </head>
-
 <body>
-    <header>
-
-        <a href="index.html" class="logo"><span>Modern</span>House</a>
-
-        <nav class="navbar">
-            <a class="home-nav" href="index.html">home</a>
-            <a href="#contact">contact</a>
-        </nav>
-    </header>
-
-
-    <div class="box-form">
-        <div class="button-box">
-            <div id="btn"></div>
-            <button type="button" class="button-in" onclick="login()">Log-in</button>
-            <button type="button" class="button-in" onclick="signup()">Sign-in</button>
+    <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+          <div class="title signup">Signup Form</div>
         </div>
-        <form id="login" class="input-grp">
-            <input type="text" class="input-field" placeholder="User-Id" required>
-            <input type="text" class="input-field" placeholder="Enter Password" required>
-            <input type="checkbox" class="check-box"><span class="check-item">Remember Password</span>
-            <button type="submit" class="submit-btn">Log-in</button>
-        </form>
-        <form id="signup" class="input-grp">
-            <input type="text" class="input-field" placeholder="User-Id" required>
-            <input type="email" class="input-field" placeholder="Email-Id" required>
-            <input type="password" class="input-field" placeholder="Enter Password" required>
-            <input type="password" class="input-field" placeholder="Renter Password" required>
-            <input type="checkbox" class="check-box"><span class="check-item">I agree to the Terms & Conditions</span>
-            <button type="submit" class="submit-btn">Sign-Up</button>
-        </form>
-    </div>
-    <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("signup");
-        var z = document.getElementById("btn");
-
-        function signup() {
-            x.style.left = "400px";
-            y.style.left = "50px";
-            z.style.left = "110px";
-        }
-        function login() {
-            x.style.left = "50px";
-            y.style.left = "400px";
-            z.style.left = "0px";
-        }
-
-    </script>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="#" class="login">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required>
+              </div>
+              <div class="pass-link"><a href="#">Forgot password?</a></div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login">
+              </div>
+              <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+            </form>
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Confirm password" required>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  
 </body>
 
 </html>
